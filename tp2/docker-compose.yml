@@ -1,0 +1,9 @@
+services:
+  env-php:
+    image: info3/r5a08
+    build: ./
+    ports:
+      - "80:80"
+      - "8000:8000"
+    volumes:
+      - ./:/app
